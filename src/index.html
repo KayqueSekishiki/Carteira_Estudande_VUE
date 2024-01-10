@@ -14,24 +14,46 @@
       <h1>Carteirinha do Estudante</h1>
       <div id="formulario">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Digite seu nome" />
+        <input
+          v-model="nome"
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome"
+        />
 
         <label for="matricula">Matricula:</label>
-        <input type="text" id="matricula" placeholder="Digite sua matrícula" />
+        <input
+          v-model="matricula"
+          type="text"
+          id="matricula"
+          placeholder="Digite sua matrícula"
+        />
       </div>
 
       <div id="previa">
         <div id="cartao">
           <div id="dados-cartao">
             <span class="label-cartao">Nome:</span>
-            <span class="dado-cartao">(O Nome deverá refletir aqui)</span>
+            <span class="dado-cartao">{{nome}}</span>
 
             <span class="label-cartao">Matrícula:</span>
-            <span class="dado-cartao">(A Matrícula deverá refletir aqui)</span>
+            <span class="dado-cartao">{{matricula}}</span>
           </div>
           <div id="foto">Foto</div>
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            nome: "",
+            matricula: "",
+          };
+        },
+      }).mount("#central");
+    </script>
   </body>
 </html>
