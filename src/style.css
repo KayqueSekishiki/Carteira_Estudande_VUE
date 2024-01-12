@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(50, 5, 128, 1) 47%,
+    rgba(4, 127, 152, 1) 100%
+  );
+}
+
+.title {
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+
+  background-color: darkgray;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+#form,
+#datas-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 10rem;
+  width: 20rem;
+
+  padding: 1rem;
+}
+
+#card {
+  position: relative;
+  background-color: #b84848;
+  border-radius: 0.5rem;
+}
+
+#photo {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  height: 6rem;
+  width: 4.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+label,
+input,
+span {
+  height: 1.5rem;
+}
+
+label {
+  color: darkblue;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+input {
+  background-color: white;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label-card {
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+.data-card {
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}

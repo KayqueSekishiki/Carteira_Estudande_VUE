@@ -11,10 +11,10 @@
   </head>
   <body>
     <div id="app">
+      <h1 class="title">XPTO - Carteirinha do Estudante</h1>
       <div id="wrapper">
-        <h1>XPTO - Carteirinha do Estudante</h1>
         <div id="form">
-          <label for="name">nome:</label>
+          <label for="name">Nome:</label>
           <input
             v-model="name"
             type="text"
@@ -34,7 +34,7 @@
         <div id="preview">
           <div id="card">
             <div id="datas-card">
-              <span class="label-card">nome:</span>
+              <span class="label-card">Nome:</span>
               <span class="data-card" v-test="name">{{name}}</span>
 
               <span class="label-card">Matrícula:</span>
