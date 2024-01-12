@@ -65,6 +65,7 @@ body {
   align-items: center;
   justify-content: center;
 
+  color: gray;
   background-color: white;
 }
 
@@ -96,4 +97,6 @@ input {
 .data-card {
   border-radius: 0.2rem;
   margin-bottom: 1rem;
+
+  color: darkgray;
 }
